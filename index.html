@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rocky Research Station — Rocks &amp; Minerals Escape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="bubbles"></div>
+  <header id="topbar">
+    <div class="brand">
+      <span class="brand-icon">🪨</span>
+      <div>
+        <h1>Rocky Research Station</h1>
+        <p>Rocks &amp; Minerals — Year 9</p>
+      </div>
+    </div>
+    <div class="hud">
+      <div class="hud-pill">🏆 <span id="hud-codes">0 / 6</span></div>
+      <div class="hud-pill">⏱️ <span id="hud-time">00:00</span></div>
+      <button class="btn" id="btn-sound">🔊</button>
+      <button class="btn" id="btn-help">❓</button>
+    </div>
+  </header>
+  <div id="app">
+    <div id="room-view">
+      <div class="room-wrap">
+        <canvas id="room" width="960" height="672" tabindex="0"></canvas>
+        <div id="prompt" hidden></div>
+      </div>
+      <p class="controls-tip">Move with <kbd>WASD</kbd> / <kbd>↑↓←→</kbd> or click · Press <kbd>E</kbd> to interact</p>
+    </div>
+    <div id="puzzle-view" hidden></div>
+    <aside id="notes">
+      <div class="notes-head">
+        <h2>📓 Field Notes</h2>
+        <p>Codes collected so far</p>
+      </div>
+      <ul id="notes-list"></ul>
+      <div class="notes-foot">
+        <p>🔑 Key word:</p>
+        <div class="keyword" id="keyword-display">P L A N E T</div>
+      </div>
+    </aside>
+  </div>
+  <div id="modal-root"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/extras.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/puzzles/planets.js"></script>
+  <script src="js/puzzles/rockcycle.js"></script>
+  <script src="js/puzzles/minerals.js"></script>
+  <script src="js/puzzles/layers.js"></script>
+  <script src="js/puzzles/rocktypes.js"></script>
+  <script src="js/puzzles/planetquiz.js"></script>
+  <script src="js/door.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
